@@ -1,0 +1,141 @@
+body {    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+}
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --accent-bg-color: #2F303A;    
+}
+
+.list {
+    list-style: none;
+}
+
+/* header */
+.logo {
+    font-family: 'Raleway';    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.site-nav .link {    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;    
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-text-color);
+}
+
+.header-contacts .contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.header-contacts .contact:hover,
+.header-contacts .contact:focus {
+    color: var(--accent-text-color);
+}
+
+/* hero */
+.hero-section {
+    background-color: var(--accent-bg-color);
+}
+.hero-title {    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* quolities */
+.quolities-section {}
+
+.quolities .title {    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.quolities .text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.section-title {    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+
+/* work */
+.work-section {}
+
+/* our-team */
+.our-team-section {
+    background-color: #F5F4FA;
+}
+.team-card-title {    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+.team-card-desc {    
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/* footer */
+.footer {
+    background-color: var(--accent-bg-color);
+}
+.footer .location,
+.footer .contact {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .location:hover,
+.footer .location:focus {
+    color: #ffffff;
+}
+.footer .contact:hover,
+.footer .contact:focus {
+    color: #ffffff;    
+}
+
+/* portfolio */
+.btn {
+    cursor: pointer;
+}
+.portfolio-section-title {
+    display: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+.portfolio-project-section .title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-color);
+}
+
+.portfolio-project-section .desc {
+    font-size: 16px;
+    line-height: 1.9;
+}
