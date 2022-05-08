@@ -1,6 +1,7 @@
 body {    
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: #ffffff;
 }
@@ -15,18 +16,22 @@ body {
     list-style: none;
 }
 
+
 /* header */
 .logo {
-    font-family: 'Raleway';    
+    font-family: Raleway, sans-serif;    
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .site-nav .link {    
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;    
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--title-text-color);
 }
 
@@ -35,16 +40,37 @@ body {
     color: var(--accent-text-color);
 }
 
-.header-contacts .contact {
+.header .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
+    letter-spacing: 0.02em;
 }
-.header-contacts .contact:hover,
-.header-contacts .contact:focus {
+.header .contacts:hover,
+.header .contacts:focus {
     color: var(--accent-text-color);
 }
 
+/* footer */
+.footer {
+    background-color: var(--accent-bg-color);
+}
+
+.footer .contacts {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .contacts:hover,
+.footer .contacts:focus {
+    color: #ffffff;
+}
+
+.contacts a {
+    text-decoration: none;
+}
+/* main studio*/
 /* hero */
 .hero-section {
     background-color: var(--accent-bg-color);
@@ -53,14 +79,26 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #ffffff;
+}
+.hero-btn{
+    cursor: pointer;    
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: #ffffff;
 }
 
 /* quolities */
 .quolities-section {}
 
-.quolities .title {    
+.quolities-section .title {    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -68,7 +106,7 @@ body {
     color: var(--title-text-color);
 }
 
-.quolities .text {
+.quolities-section .desc {
     font-size: 14px;
     line-height: 1.7;
 }
@@ -77,6 +115,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
+    text-align: center;
     color: var(--title-text-color);
 }
 
@@ -91,51 +130,49 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
     color: var(--title-text-color);
 }
-.team-card-desc {    
+.team-card-text {    
     font-size: 16px;
     line-height: 1.2;
-}
-
-/* footer */
-.footer {
-    background-color: var(--accent-bg-color);
-}
-.footer .location,
-.footer .contact {
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer .location:hover,
-.footer .location:focus {
-    color: #ffffff;
-}
-.footer .contact:hover,
-.footer .contact:focus {
-    color: #ffffff;    
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* portfolio */
+
 .btn {
     cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;    
+    text-align: center;
+    background: #F5F4FA
+    color: var(--title-text-color)
 }
-.portfolio-section-title {
+
+.portfolio-section .link {
+    text-decoration: none;
+}
+
+.portfolio-section .title {
     display: none;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     color: var(--title-text-color);
 }
-.portfolio-project-section .title {    
+.portfolio-section .card-title {    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
 
-.portfolio-project-section .desc {
+.portfolio-section .card-text {
     font-size: 16px;
     line-height: 1.9;
 }
