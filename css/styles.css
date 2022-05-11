@@ -18,6 +18,7 @@ body {
 
 
 /* header */
+/* logo */
 .logo {
     font-family: Raleway, sans-serif;    
     font-weight: 700;
@@ -26,7 +27,20 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link {    
+.logo-forepart {
+    color: var(--accent-text-color);
+}
+
+.top-header .logo {
+    color: #000000;
+}
+
+.footer .logo {
+    color: #ffffff;
+}
+
+/* site-nav */
+.nav-link {    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -35,19 +49,33 @@ body {
     color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-text-color);
 }
 
-.header .contacts {
+.nav-link.current {
+    color: var(--accent-text-color);
+}
+
+/* contacts */
+.contact-mail,
+.contact-tel {
+    font-style: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    color: inherit;
 }
-.header .contacts:hover,
-.header .contacts:focus {
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--accent-text-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
     color: var(--accent-text-color);
 }
 
@@ -56,20 +84,35 @@ body {
     background-color: var(--accent-bg-color);
 }
 
-.footer .contacts {
+.studio-address {
+    font-style: inherit;
+}
+
+.footer-contact-address,
+.footer-contact-mail,
+.footer-contact-tel {
+    font-style: inherit;
     font-size: 14px;
     line-height: 1.7;
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .contacts:hover,
-.footer .contacts:focus {
+.footer-contact-address:hover,
+.footer-contact-address:focus {
     color: #ffffff;
 }
 
-.contacts a {
-    text-decoration: none;
+.footer-contact-mail:hover,
+.footer-contact-mail:focus {
+    color: #ffffff;
 }
+
+.footer-contact-tel:hover,
+.footer-contact-tel:focus {
+    color: #ffffff;
+}
+
 /* main studio*/
 /* hero */
 .hero-section {
@@ -88,6 +131,7 @@ body {
     cursor: pointer;    
     background-color: var(--accent-text-color);
     font-family: inherit;
+    font-style: inherit;
     display: flex;
     align-items: center;
     text-align: center;
@@ -95,10 +139,19 @@ body {
     color: #ffffff;
 }
 
+/* section title h3 */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
 /* quolities */
 .quolities-section {}
 
-.quolities-section .title {    
+.quolities-title {    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -106,17 +159,9 @@ body {
     color: var(--title-text-color);
 }
 
-.quolities-section .desc {
+.quolities-desc {
     font-size: 14px;
     line-height: 1.7;
-}
-
-.section-title {    
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    color: var(--title-text-color);
 }
 
 /* work */
@@ -141,30 +186,37 @@ body {
 }
 
 /* portfolio */
-
-.btn {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;    
-    text-align: center;
-    background: #F5F4FA
-    color: var(--title-text-color)
-}
-
-.portfolio-section .link {
-    text-decoration: none;
-}
-
-.portfolio-section .title {
+.portfolio-title {
     display: none;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     color: var(--title-text-color);
 }
-.portfolio-section .card-title {    
+
+.portfolio-filter-btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;    
+    text-align: center;
+    background: #F5F4FA;
+    color: var(--title-text-color)
+}
+
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+    background-color: var(--accent-text-color);
+    color: #ffffff;
+}
+
+.portfolio-prj-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-prj-card-title {    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -172,7 +224,10 @@ body {
     color: var(--title-text-color);
 }
 
-.portfolio-section .card-text {
+.portfolio-prj-card-text {
     font-size: 16px;
     line-height: 1.9;
 }
+
+
+
