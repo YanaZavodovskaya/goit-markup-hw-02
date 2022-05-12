@@ -98,8 +98,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact-address:hover,
-.footer-contact-address:focus {
+.footer-contact-address {
     color: #ffffff;
 }
 
@@ -127,7 +126,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
 }
-.hero-btn{
+.hero-btn {
     cursor: pointer;    
     background-color: var(--accent-text-color);
     font-family: inherit;
@@ -137,6 +136,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
 }
 
 /* section title h3 */
